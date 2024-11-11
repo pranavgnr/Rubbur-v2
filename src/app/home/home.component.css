@@ -1,0 +1,22 @@
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-logo {
+  width: 15vw;
+  height: auto;
+}
+
+.bucket-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.bucket-outer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

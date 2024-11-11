@@ -1,0 +1,20 @@
+<div class="main-container">
+
+  <div class="navbar-container">
+    <nav class="navbar navbar-light bg-light">
+      <span class="navbar-brand mb-0 h1">
+        <img class="main-logo" src="../../assets/rubbur-logo.png" alt="">
+      </span>
+    </nav>
+  </div>
+
+  <div class="bucket-outer-container">
+    <div class="bucket-container">
+      <div *ngFor="let i of items">
+        <app-book [heading]="i"></app-book>
+      </div>
+      <button (click)="addBook()">ADD</button>
+    </div>
+  </div>
+
+</div>

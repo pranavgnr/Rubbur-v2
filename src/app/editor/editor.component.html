@@ -1,1 +1,15 @@
-<p>editor works!</p>
+<div class="navbar-container">
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">
+      <img class="main-logo" src="../../assets/rubbur-logo.png" alt="">
+    </span>
+  </nav>
+</div>
+
+<div class="container">
+  <div class="NgxEditor__Wrapper custom_editor">
+    <ngx-editor-menu [editor]="editor"> </ngx-editor-menu>
+    <ngx-editor [editor]="editor" [(ngModel)]="html" [disabled]="false" [placeholder]="'Type here...'"></ngx-editor>
+  </div>
+  <button (click)="saveContent(html)">SAVE</button>
+</div>

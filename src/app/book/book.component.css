@@ -1,0 +1,29 @@
+.card {
+  overflow: hidden;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 15px;
+  margin-top: 3px;
+  margin-right: 5px;
+  color: white;
+}
+
+.custom_card{
+  border-color: rgb(128, 128, 128);
+  border-radius: 10px;
+  border-style: solid;
+}
+
+.card:hover .icons-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 15px;
+  margin-top: 3px;
+  margin-right: 5px;
+  color: black;
+}

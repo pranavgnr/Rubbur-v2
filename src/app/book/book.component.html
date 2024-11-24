@@ -1,8 +1,8 @@
 <div class="card custom_card shadow" style="height: 225px;">
   <div class="icons-container">
     <i (click)="editBook()" class="bi bi-pencil custom_icon"></i>
-    <i class="bi bi-arrow-right-square custom_icon"></i>
-    <i class="bi bi-trash3 custom_icon"></i>
+    <i (click)="goIntoBook()" class="bi bi-arrow-right-square custom_icon"></i>
+    <i (click)="deleteBook()" class="bi bi-trash3 custom_icon"></i>
   </div>
   <div class="card-body">
     <div class="card-title custom-content" [innerHtml]="title"></div>

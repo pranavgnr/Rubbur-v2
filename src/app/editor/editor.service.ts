@@ -13,4 +13,8 @@ export class EditorService {
   saveToBackend(data: any): Observable<any> {
     return this.http.post(`${this.baseUrl}/save`,data);
   }
+
+  updateToBackend(data: any): Observable<any> {
+    return this.http.post(`${this.baseUrl}/updateBook`,data);
+  }
 }

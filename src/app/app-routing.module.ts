@@ -4,7 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { EditorComponent } from './editor/editor.component';
 
 const routes: Routes = [
-  {path:'',component:HomeComponent},
+  {path:'', component:HomeComponent},
   {path:'editor', component: EditorComponent}
 ];
 

@@ -18,9 +18,9 @@
 .bucket-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
-  gap: 1.5rem;
+  gap: 2rem;
   width: 80vw;
-  margin: 30px;
+  margin-top: 50px;
 }
 
 .bucket-outer-container {

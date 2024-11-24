@@ -14,4 +14,8 @@ export class HomeService {
   getMainBooks(): Observable<any> {
     return this.httpclient.get(`${this.baseUrl}/getMainBooks`);
   }
+
+  getOtherBooks(parentId: any): Observable<any> {
+    return this.httpclient.post(`${this.baseUrl}/getOtherBooks`,parentId);
+  }
 }

@@ -9,7 +9,8 @@ export class HomeService {
 
   constructor(private httpclient: HttpClient) { }
 
-  baseUrl = "http://localhost:3000";
+  //baseUrl = "http://localhost:3000";
+  baseUrl = 'http://13.126.61.27:3000';
 
   getMainBooks(): Observable<any> {
     return this.httpclient.get(`${this.baseUrl}/getMainBooks`);

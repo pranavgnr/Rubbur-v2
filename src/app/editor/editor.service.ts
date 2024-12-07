@@ -7,7 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class EditorService {
 
-  baseUrl = 'http://localhost:3000'
+  //baseUrl = 'http://localhost:3000'
+  baseUrl = 'http://13.126.61.27:3000';
   constructor(private http: HttpClient) { }
 
   saveToBackend(data: any): Observable<any> {

@@ -51,7 +51,7 @@ export class EditorComponent {
           console.log("data saved");
          this.location.back()
         },
-        error: (error) => console.log("some stupid error"),
+        error: (error) => console.log("some stupid error", error),
       });
 
     } else {

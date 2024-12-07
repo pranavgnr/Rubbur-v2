@@ -49,6 +49,7 @@ export class EditorComponent {
       this.editorservice.saveToBackend(data).subscribe({
         next: (res) => {
           console.log("data saved");
+         this.location.back()
         },
         error: (error) => console.log("some stupid error"),
       });
@@ -63,6 +64,7 @@ export class EditorComponent {
       this.editorservice.updateToBackend(data).subscribe({
         next: (res) => {
           console.log("data saved");
+          this.location.back()
         },
         error: (error) => console.log("some stupid error"),
       });

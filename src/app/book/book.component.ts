@@ -2,6 +2,7 @@ import { Component, EventEmitter, Input, input, Output, output } from '@angular/
 import { HomeService } from '../home/home.service';
 import { Router } from '@angular/router';
 import { BookService } from './book.service';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-book',
@@ -14,7 +15,7 @@ export class BookComponent {
   title:any = ''
   parentId: string = ''
 
-  constructor(private homeservice: HomeService, private router: Router, private bookservice: BookService) {}
+  constructor(private homeservice: HomeService, private router: Router, private bookservice: BookService, private location: Location) {}
 
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
@@ -34,8 +35,8 @@ export class BookComponent {
     }
     this.bookservice.deleteBook(data).subscribe(res => {
       console.log("book deleted: ",res);
+      window.location.reload();
     });
-
   }
 
   goIntoBook() {
